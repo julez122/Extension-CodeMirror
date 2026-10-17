@@ -1,13 +1,17 @@
 # CodeMirror for SillyTavern
 
-A fancier expanded text editor
+A fancier expanded text editor.
+
+## Fork Changes
+
+- Made the "Search" button visible on mobile (temporary fix) and gave it the actual SillyTavern button styling. Adjusted several other UI elements.
 
 ## How to use
 
 1. Install the extension via the link:
 
 ```txt
-https://github.com/SillyTavern/Extension-CodeMirror
+https://github.com/julez122/Extension-CodeMirror
 ```
 
 2. Click on any of the "Expand text area" buttons in the SillyTavern UI (i.e. near the character description).

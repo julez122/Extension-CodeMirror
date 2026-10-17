@@ -23,6 +23,8 @@ dialog.popup:has(.codemirror-host) {
 
 .codemirror-host .cm-editor .cm-content {
     font-family: var(--monoFontFamily);
+    text-align: justify;
+    padding-top: 10px;
 }
 
 .codemirror-host .cm-editor.cm-focused  .cm-selectionLayer .cm-selectionBackground,
@@ -76,8 +78,13 @@ dialog.popup:has(.codemirror-host) {
 
 .codemirror-host .cm-search-button {
     color: var(--SmartThemeBodyColor);
-    background-color: var(--SmartThemeBlurTintColor);
-    border: 1px solid var(--SmartThemeBorderColor);
+    background: color-mix(
+    in srgb,
+    var(--SmartThemeBodyColor) 5%,
+    transparent
+  ) !important;
+    border: 1px solid
+    color-mix(in srgb, var(--SmartThemeBodyColor) 25%, transparent) !important;
     border-radius: 5px;
     padding: 3px 5px;
     width: min-content;
@@ -90,7 +97,9 @@ dialog.popup:has(.codemirror-host) {
     width: auto;
     background-image: none;
     position: absolute;
-    bottom: 0;
+    bottom: 45px;
     left: 0;
-    margin: 5px;
+    margin-left: 70px;
+    box-shadow: 0 0 5px color-mix(in srgb, var(--SmartThemeBodyColor) 25%, transparent) !important;
+    font-size: 12px;
 }
