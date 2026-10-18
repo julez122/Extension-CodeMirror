@@ -100,9 +100,9 @@ dialog.popup:has(.codemirror-host) {
 }
 
 /* Add more padding to the editor text */
-.cm-line {
+.codemirror-host .cm-editor .cm-line {
     display: block;
-    padding: 0px 3px 0 10px;
+    padding: 0px 3px 0 10px !important;
 } 
 
 
@@ -115,7 +115,7 @@ dialog.popup:has(.codemirror-host) {
 }
 
 /* Better selection matching background color */
-.cm-selectionMatch {
-    background-color: #99ff7736;
+.codemirror-host .cm-editor .cm-selectionMatch {
+    background-color: #99ff7736 !important;
 }
 
